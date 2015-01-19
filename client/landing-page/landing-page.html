@@ -1,6 +1,7 @@
 <body>
 <h1>{{bookTitle}}</h1>
 {{> header}}
+{{> chapters}}
 </body>
 
 <template name="header">
@@ -10,4 +11,13 @@
             <figcaption>{{imageCaption}}</figcaption>
         </figure>
     </header>
+</template>
+
+<template name="chapters">
+  <div class="chapters">
+    {{#each chapters}}
+      <h2 class="chapter-title">{{title}}</h2>
+      <p class="chapter-description">{{description}}</p>
+    {{/each}}
+  </div>
 </template>

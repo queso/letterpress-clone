@@ -8,3 +8,9 @@ Template.header.helpers({
     return Meteor.settings.public.book.header.imageCaption;
   }
 });
+
+Template.chapters.helpers({
+  chapters: function() {
+    return Chapters.find({}, {sort: {chapterNumber: 1}});
+  }
+});

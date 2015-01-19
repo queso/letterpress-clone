@@ -43,6 +43,27 @@
         });
     });
 
-  };
+    this.Given(/^I have entered chapter preview descriptions$/, function (callback) {
+      // Write code here that turns the phrase above into concrete actions
+      callback();
+    });
 
+    this.Then(/^I see the chapters descriptions in the preview section$/, function (callback) {
+      helper.world.browser.
+        getText('p', function(error, actualDescriptions) {
+          if (error) { callback.fail(error.message);}
+          assert.equal(actualDescriptions[0], "This chapter will cover item 1");
+          callback();
+        });
+    });
+
+    this.Then(/^the chapters are in order$/, function (callback) {
+      helper.world.browser.
+        getText('h2', function(error, actualHeadings) {
+          if (error) { callback.fail(error.message);}
+          assert.deepEqual(actualHeadings, ["Item 1", "Item 2"]);
+          callback();
+        });
+    });
+  };
 })();
