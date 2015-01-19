@@ -11,6 +11,6 @@ Template.header.helpers({
 
 Template.chapters.helpers({
   chapters: function() {
-    return Chapters.find({}, {sort: {chapterNumber: 1}});
+    return Chapters.find({}, {sort: {chapterNumber: -1}});
   }
 });
