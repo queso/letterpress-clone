@@ -11,7 +11,7 @@ development. You can follow a step-by-step guide of how this was done in the
 [Click here to see the demo site](http://letterpress.xolv.io) - *in progress, see below for
 completion details*
 
-##Features:
+## Features:
 
 * [ ] Landing Page (in progress)
   * [ ] Configurable Content
@@ -43,7 +43,7 @@ completion details*
   * [ ] PDF
   * [ ] ePub
 
-##Usage
+## Usage
 
 To run Letterpress, clone this repo and type:
 
@@ -52,7 +52,7 @@ To run Letterpress, clone this repo and type:
 You must have a settings.json that has the same fields as the default
 [Letterpress settings.json](https://github.com/xolvio/Letterpress/blob/master/settings.json) file.
 
-##License
+## License
 Free free to use the code to write and host freely accessible non-commercial books. If you wish
 to sell your book, please talk to us first and we can agree something reasonable. No seriously,
 it's really reasonable!
